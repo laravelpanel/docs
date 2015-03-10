@@ -1,4 +1,5 @@
-##Installations
+## Automatic Installation
+
 Note: if you face any problem in any of the steps you should report it at [github](https://github.com/serverfireteam/panel/issues/new)
 
 1. First you need to create a laravel 5 project.

@@ -1,0 +1,3 @@
+- Setup
+    - [Automatic Installation](/docs/master/automatic-installatiion)
+    - [Manual Installation](/docs/master/manual-installation)

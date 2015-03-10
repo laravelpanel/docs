@@ -1,3 +1,5 @@
+## Manual Installation
+
 1. First you need a laravel 5 project ready to use.
 
 2. Add the package to require section of composer :
