@@ -1,3 +1,3 @@
 - Setup
-    - [Automatic Installation](/docs/master/automatic-installatiion)
+    - [Automatic Installation](/docs/master/automatic-installation)
     - [Manual Installation](/docs/master/manual-installation)
