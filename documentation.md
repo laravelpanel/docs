@@ -5,3 +5,5 @@
 - CRUD
     - [CRUD Commands](/docs/master/crud-commands)
     - [CRUD Fields](/docs/master/crud-fields)
+- FAQ
+    - [FAQ](/docs/master/faq)
