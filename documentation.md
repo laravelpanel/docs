@@ -6,5 +6,7 @@
     - [CRUD Commands](/docs/master/crud-commands)
     - [CRUD Fields](/docs/master/crud-fields)
     - [CRUD Custom Fields](/docs/master/crud-custom-fields)
+- Development
+    - [Create a Package](/docs/master/create-package)
 - FAQ
     - [FAQ](/docs/master/faq)
