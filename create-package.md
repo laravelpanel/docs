@@ -1,4 +1,4 @@
-# Create a Package
+# Add Module to Panel (Create a Package)
 
 You can create your own package using the 'panel' package and add new features to the 'panel'. To do this, you should add your package name to the list of Links in the panel while installing your package. (You should add the code related to this in your installation script.)
 

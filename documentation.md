@@ -6,7 +6,8 @@
     - [CRUD Commands](/docs/master/crud-commands)
     - [CRUD Fields](/docs/master/crud-fields)
     - [CRUD Custom Fields](/docs/master/crud-custom-fields)
-- Development
-    - [Create a Package](/docs/master/create-package)
+- Development of Panel
+    - [Add Module to Panel](/docs/master/create-package)
+    - [Customize the Admin Template](/docs/master/customize-admin-template)
 - FAQ
     - [FAQ](/docs/master/faq)
