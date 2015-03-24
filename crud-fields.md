@@ -9,7 +9,7 @@ $this->edit->text('title', 'Title'); // field name, label (short syntax)
 ```
 - select box 
 ```php
-$this->edit->add('company_id','Company','select')->options(\Company::lists("name", "id"));
+$this->edit->add('company_id','Company','select')->options(\App\Company::lists("name", "id"));
 ```
 - checkbox (usually used for boolean (0 or 1) values,  but it can be configured on different values (to be usable also for enum fields))
 ```php
