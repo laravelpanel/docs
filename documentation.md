@@ -9,5 +9,6 @@
 - Development of Panel
     - [Add Module to Panel](/docs/master/create-package)
     - [Customize the Admin Template](/docs/master/customize-admin-template)
+    - [Add A Customized Controller and View](/docs/master/customized-controller-view)
 - FAQ
     - [FAQ](/docs/master/faq)
