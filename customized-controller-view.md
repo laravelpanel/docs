@@ -1,10 +1,8 @@
 # Add A Customized Controller And View
 
-If you need to a customized controller and view under panel, please read this section.
+If you need to create a customized controller and view under panel, please read this section.
 
-## Add A Customized Controller
-
-You should create a controller and extend it from the Controller class (instead of the CrudController), for example if the controller is named TestCustomController :
+First create a controller and extend it from the Controller class (instead of the CrudController), for example if the controller is named TestCustomController :
 
 	TestCustomController extends Controller {
 
@@ -23,6 +21,6 @@ Then you should create your view file, for example if your view is named test_cu
 	@extends('panelViews::mainTemplate')
 	@section('page-wrapper')
 
-	<!-- View Code 	-->
+	<!-- Code -->
 
 	@stop
