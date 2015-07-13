@@ -33,7 +33,8 @@ A: If for example we need to obtain `material` and `cateogry` of each `product`,
 		}
 	}
 
-Q: How can I preprocess some data before storing it in CRUD ? What would be the suggested way of doing it?
+Q: How can I preprocess some data before storing it in CRUD ? What would be the suggested way of doing it ? 
+
 A: You should use model events, for example for storing secure password values you can use the 'creating' model event :
 
 	public function edit($entity) {
@@ -52,11 +53,12 @@ A: You should use model events, for example for storing secure password values y
 		return $this->returnEditView();
 	}
 
-Q: How can I add a blank option in select box field in CRUD ?
+Q: How can I add a blank option in select box field in CRUD ? 
+
 A: The options function gets an array so you can just add an index to the array before passing it, for example :
 
-		$options = Department::lists("name", "id");
-	        array_unshift($options, '');
+	$options = Department::lists("name", "id");
+	array_unshift($options, '');
 
-	        $this->edit = \DataEdit::source(new Category());
-	        $this->edit->add('parent_id', 'Department', 'select')->options($options);
+	$this->edit = \DataEdit::source(new Category());
+	$this->edit->add('parent_id', 'Department', 'select')->options($options);
