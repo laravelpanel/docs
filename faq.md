@@ -32,3 +32,31 @@ A: If for example we need to obtain `material` and `cateogry` of each `product`,
 			return $this->belongsTo('Material', 'material_id');
 		}
 	}
+
+Q: How can I preprocess some data before storing it in CRUD ? What would be the suggested way of doing it?
+A: You should use model events, for example for storing secure password values you can use the 'creating' model event :
+
+	public function edit($entity) {
+
+		parent::edit($entity);
+		\App\Modelname::creating(function($data) {
+			$data->password = Hash::make(\Request::input('password'));
+		});
+
+		$this->edit = \DataEdit::source(new Modelname());
+
+		$this->edit->label('Edit User');
+
+		$this->edit->add('password', 'Password', 'text');
+
+		return $this->returnEditView();
+	}
+
+Q: How can I add a blank option in select box field in CRUD ?
+A: The options function gets an array so you can just add an index to the array before passing it, for example :
+
+		$options = Department::lists("name", "id");
+	        array_unshift($options, '');
+
+	        $this->edit = \DataEdit::source(new Category());
+	        $this->edit->add('parent_id', 'Department', 'select')->options($options);
