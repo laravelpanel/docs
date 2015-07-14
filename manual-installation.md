@@ -4,6 +4,7 @@
 
 2. Add the package to require section of composer :
 
+    Laravel 5.0 :
     ```json
     {
         "require": {
@@ -11,13 +12,31 @@
         },
     }
     ```
+
+    Laravel 5.1 :
+    ```json
+    {
+        "require": {
+            "serverfireteam/panel": "1.3.*"
+        },
+    }
+    ```
+
 And run the composer update command, the package and its dependencies will be installed.
 
 3. Add the ServiceProvider of the package to the list of providers in the file config/app.php :
 
+    Laravel 5.0 :
     ```php
     'providers' => array(
         'Serverfireteam\Panel\PanelServiceProvider'
+    )
+    ```
+
+    Laravel 5.1 :
+    ```php
+    'providers' => array(
+    	Serverfireteam\Panel\PanelServiceProvider::class
     )
     ```
 
