@@ -1,6 +1,7 @@
 - Setup
     - [Automatic Installation](/docs/master/automatic-installation)
     - [Manual Installation](/docs/master/manual-installation)
+    - [Update](/docs/master/update)
     - [Dashboard Guide](/docs/master/dashboard-guide)
 - CRUD
     - [CRUD Commands](/docs/master/crud-commands)
