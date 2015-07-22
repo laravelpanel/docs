@@ -49,7 +49,8 @@ And run the composer update command, the package and its dependencies will be in
 
     ```
 
-5. Go to your domain.com/public/panel and you can login with the following username and password :
+5. Go to your domain.com/panel and you can login with the following username and password :
 
     user : admin@change.me
+
     password : 12345
