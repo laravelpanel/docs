@@ -14,7 +14,7 @@ by default _$this->value_  is filled by the value stored in the db  and _$this->
 
 Most of time if field is "simple" (doesn't require transformations) you need only to override build().
 Like this one:
-https://github.com/zofe/rapyd-laravel/blob/master/src/Zofe/Rapyd/DataForm/Field/Redactor.php
+https://github.com/zofe/rapyd-laravel/blob/master/src/DataForm/Field/Redactor.php
 
 
 If you don't know how to setup a custom Namespace in Laravel this is a mini how-to:
