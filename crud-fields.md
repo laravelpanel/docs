@@ -9,7 +9,7 @@ $this->edit->text('title', 'Title'); // field name, label (short syntax)
 ```
 - select box 
 ```php
-$this->edit->add('company_id','Company','select')->options(\App\Company::lists("name", "id"));
+$this->edit->add('company_id','Company','select')->options(\App\Company::lists("name", "id")->all());
 ```
 - checkbox (usually used for boolean (0 or 1) values,  but it can be configured on different values (to be usable also for enum fields))
 ```php
@@ -19,7 +19,7 @@ $this->edit->checkbox('title', 'Title'); // field name, label (short syntax)
 - checkboxgroup (checkbox list), usually using relation.fieldname to store values in a pivot table, for a belongsTo relation
 ```php
 $this->edit->add('categories', 'Categories', 'checkboxgroup')
-     ->options(Category::lists("name", "category_id"));
+     ->options(Category::lists("name", "category_id")->all());
 ```
 - radiogroup, as in checkboxgroup you can use option or options() to fill values
 ```php

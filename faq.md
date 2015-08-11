@@ -11,7 +11,7 @@ Q: How can I create a drop down field with reference to another CRUD item. Also 
 
 A: You can use the 'options' method to pass the values from another table to drop down fields. This method gets an array of key/values, for example if the name    of the model you want to get the values from is 'Company', you can define your field like this :
 
-	$this->edit->add('field-name', 'label', 'select')->options(\Company::lists("name", "id"));
+	$this->edit->add('field-name', 'label', 'select')->options(\Company::lists("name", "id")->all());
 
 
 Q: How can I display/edit data which is fetched from more than one table in CRUD ? 
@@ -57,7 +57,7 @@ Q: How can I add a blank option in select box field in CRUD ?
 
 A: The options function gets an array so you can just add an index to the array before passing it, for example :
 
-	$options = Department::lists("name", "id");
+	$options = Department::lists("name", "id")->all();
 	array_unshift($options, '');
 
 	$this->edit = \DataEdit::source(new Category());
