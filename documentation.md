@@ -12,5 +12,6 @@
     - [Add Module to Panel](/docs/master/create-package)
     - [Customize the Admin Template](/docs/master/customize-admin-template)
     - [Add A Customized Controller and View](/docs/master/customized-controller-view)
+    - [Overriding the Language Files](/docs/master/override-lang-files)
 - FAQ
     - [FAQ](/docs/master/faq)
