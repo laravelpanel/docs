@@ -54,3 +54,7 @@ And run the composer update command, the package and its dependencies will be in
     user : admin@change.me
 
     password : 12345
+
+
+
+[>Next (Make crud with crud commands) ](/docs/master/crud-commands)

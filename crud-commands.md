@@ -26,3 +26,9 @@ To create the model of an entity, you should run the following command :
 To create the controller of an entity, you should run the following command :
 
 	php artisan panel:createcontroller <entity-name>
+
+## create migration for your crud
+[Read from laravel document](http://laravel.com/docs/5.1/migrations) 
+
+
+[>Next (Add your fileds to crud controller you have created)](/docs/master/crud-fields) 
