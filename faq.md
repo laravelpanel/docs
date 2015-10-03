@@ -16,9 +16,11 @@ A: You can use the 'options' method to pass the values from another table to dro
 
 Q: How can I display/edit data which is fetched from more than one table in CRUD ? 
 
-A: If for example we need to obtain `material` and `cateogry` of each `product`, we need to modify the grid for this :
+A: If for example we need to obtain `material` and `cateogry` of each `product`, we need to modify the grid in `ProductController` and add this line :
 
 	$grid = DataGrid::source(Product::with('category','material');
+
+In the `Product` modle the following modifications should be made:
 
 	class Product extends \Eloquent
 	{
