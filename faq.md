@@ -14,13 +14,13 @@ A: You can use the 'options' method to pass the values from another table to dro
 	$this->edit->add('field-name', 'label', 'select')->options(\Company::lists("name", "id")->all());
 
 
-Q: How can I display/edit data which is fetched from more than one table in CRUD ? 
+Q: How can I display data which is fetched from more than one table in CRUD ? 
 
-A: If for example we need to obtain `material` and `cateogry` of each `product`, we need to modify the grid in `ProductController` and add this line :
+A: If for example we need to obtain `material` and `category` of each `product`, we need to modify the grid in `ProductController` and add this line :
 
-	$grid = DataGrid::source(Product::with('category','material');
+	$grid = DataGrid::source(Product::with('category','material'));
 
-In the `Product` modle the following modifications should be made:
+In the `Product` model the following modifications should be made:
 
 	class Product extends \Eloquent
 	{
@@ -34,6 +34,13 @@ In the `Product` modle the following modifications should be made:
 			return $this->belongsTo('Material', 'material_id');
 		}
 	}
+
+Q: How can I save data into two related tables in CRUD ?
+
+A: You just need to add the fields of the related table by specifying their relation in field name section of 'add' method, for example :
+
+     $this->edit = \DataEdit::source(new \App\ModelName());
+     $this->edit->add('relation.fieldname', 'Field Label', 'text');
 
 Q: How can I preprocess some data before storing it in CRUD ? What would be the suggested way of doing it ? 
 
