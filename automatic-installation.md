@@ -35,7 +35,7 @@ Or Add the package to require section of composer And run the composer update co
 
     ```php
     'providers' => array(
-    	Serverfireteam\Panel\PanelServiceProvider::class
+    	'Serverfireteam\Panel\PanelServiceProvider'
     )
     ```
 
