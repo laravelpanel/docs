@@ -4,7 +4,12 @@ Note: if you face any problem in any of the steps you should report it at [githu
 
 1. First you need to create a laravel 5 project.
 
-2. Add the package to require section of composer :
+2. Add LaravelPanel  
+Run this code in CMD 
+```
+    composer require serverfireteam/panel
+```
+Or Add the package to require section of composer And run the composer update command, the package and its dependencies will be installed.
 
     Laravel 5.0 :
     ```json
@@ -24,18 +29,10 @@ Note: if you face any problem in any of the steps you should report it at [githu
     }
     ```
 
-And run the composer update command, the package and its dependencies will be installed.
+
 
 3. Add the ServiceProvider of the package to the list of providers in the config/app.php file
 
-    Laravel 5.0 :
-    ```php
-    'providers' => array(
-        'Serverfireteam\Panel\PanelServiceProvider'
-    )
-    ```
-
-    Laravel 5.1 :
     ```php
     'providers' => array(
     	Serverfireteam\Panel\PanelServiceProvider::class
