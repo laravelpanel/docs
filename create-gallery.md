@@ -1,12 +1,17 @@
-# How to create an Image Gallery in 5 minutes
-
-To create an image gallery we need to add two sections : Admin section (for that we are going to use LaravelPanel) and Client section.
+# How to create an Image Gallery with managment system in 5 minutes
+## Screen shot 
+![clint side](http://laravelpanel.com/assets/img/create-gallery-1.png)
+![managment part](http://laravelpanel.com/assets/img/create-gallery-2.png)
 
 List of steps we need to follow :
 1. [Install laravel](http://laravel.com/docs/5.1#installation)
+
 2. [install laravelPanel](http://laravelpanel.com/docs/master/automatic-installation)
+
 3. Create the files we need
+
 4. Write the code in crud controller and test it
+
 5. Fetch data on client side and show the gallery
 
 
