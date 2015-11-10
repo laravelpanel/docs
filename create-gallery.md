@@ -3,7 +3,9 @@
 ![clint side](http://laravelpanel.com/assets/img/create-gallery-1.png)
 ![managment part](http://laravelpanel.com/assets/img/create-gallery-2.png)
 
+
 List of steps we need to follow :
+
 1. [Install laravel](http://laravel.com/docs/5.1#installation)
 
 2. [install laravelPanel](http://laravelpanel.com/docs/master/automatic-installation)
@@ -14,7 +16,7 @@ List of steps we need to follow :
 
 5. Fetch data on client side and show the gallery
 
-
+if you want finished code you can download it from [here](https://github.com/serverfire/gallery)
 # Create the files we need
 
 After you have installed the Laravel and LaravelPanel from the links above, you need to create the crud for gallery items.
