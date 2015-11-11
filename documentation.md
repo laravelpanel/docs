@@ -3,9 +3,9 @@
     - [Update](/docs/master/update)
     - [Contribution Guide](/docs/master/contributing)
 
-
 - The Basics
     - [Dashboard Guide](/docs/master/dashboard-guide)
+    - [Create Gallery Tutorial](/docs/master/create-gallery)
     - [File manager(Elfinder)](/docs/master/elfinder)
     - [FAQ](/docs/master/faq)
 
@@ -24,7 +24,3 @@
     - [Customize the Admin Template](/docs/master/customize-admin-template)
     - [Customize Controller and View](/docs/master/customized-controller-view)
     - [Overriding the Language Files](/docs/master/override-lang-files)
-
-- 
-
-
