@@ -71,3 +71,7 @@ A: The options function gets an array so you can just add an index to the array 
 
 	$this->edit = \DataEdit::source(new Category());
 	$this->edit->add('parent_id', 'Department', 'select')->options($options);
+	
+Q: How can I remove item from admin menu? 
+
+A: You can use link controller in admin and remove it from there or use phpmyadmin and remove the record from link table
