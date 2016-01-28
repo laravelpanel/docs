@@ -7,7 +7,7 @@ To update the panel to the latest version, you need to :
     ```json
     {
         "require": {
-            "serverfireteam/panel": "1.3.*"
+            "serverfireteam/panel": "1.4.*"
         },
     }
     ```
