@@ -1,6 +1,45 @@
 # CRUD Fields
 
-Here we explain how you can add different types of fields to your CRUD :
+Here we explain how you can add different types of fields to your CRUD interface. The Controller files contain 2 methods; 
+
+- all - Within this method you can modify the grid
+- edit - Within this method you can modify the edit form 
+
+### Grid View
+
+- Filtering and Grid Fields
+```php
+// Filter 
+$this->filter = \DataFilter::source(new \App\Product());
+$this->filter->add('categoryId','Category','select')->options(\App\Category::lists("name", "id")->all()); // Filter with Select List
+$this->filter->add('name', 'Name', 'text'); // Filter by String
+$this->filter->submit('search');
+$this->filter->reset('reset');
+$this->filter->build();
+
+// Grid Columns
+$this->grid = \DataGrid::source($this->filter);
+$this->grid->add('name', 'Name');
+$this->grid->add('description', 'Description');
+$this->addStylesToGrid();
+```
+- Paginate
+```php
+$this->grid->paginate(10);
+``` 
+- Ordering
+```php
+$this->grid->add('name', 'Name', true); // allow ordering by this column
+$this->grid->orderBy('article_id','desc'); //default orderby
+``` 
+
+
+### Edit View
+- Allow Sorting on column
+```php
+$this->grid->add('name', 'Name', true);
+``` 
+
 
 - text (input field) 
 ```php
@@ -10,6 +49,7 @@ $this->edit->text('title', 'Title'); // field name, label (short syntax)
 - select box 
 ```php
 $this->edit->add('company_id','Company','select')->options(\App\Company::lists("name", "id")->all());
+$this->edit->add('adminId','Admin','select')->insertValue(1)->options(\Serverfireteam\Panel\Admin::lists("email", "id")->all());  // pre-select a value in a select box
 ```
 - checkbox (usually used for boolean (0 or 1) values,  but it can be configured on different values (to be usable also for enum fields))
 ```php
@@ -67,7 +107,7 @@ It supports some locales & formats like date field
 $this->filter->add('publication_date', 'pub.date', 'daterange')->format('d/m/Y', 'it');
 ```
 
-- auto:  a simple way to pass values to your model without output, you must use insertValue() and/or updateValue() 
+- auto:  a simple way to pass values to your model without output, you must use insertValue() and/or updateValue(). 
 ```php
 $this->filter->add('myfield', '', 'auto')->insertValue('myvalue');
 $this->filter->add('anotherfield', '', 'auto')->updateValue('anothervalue');
