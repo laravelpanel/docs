@@ -7,17 +7,17 @@ Here we explain how you can add different types of fields to your CRUD interface
 
 ### Grid View
 
-- Filtering and Grid Fields
+- Filter
 ```php
-// Filter 
 $this->filter = \DataFilter::source(new \App\Product());
 $this->filter->add('categoryId','Category','select')->options(\App\Category::lists("name", "id")->all()); // Filter with Select List
 $this->filter->add('name', 'Name', 'text'); // Filter by String
 $this->filter->submit('search');
 $this->filter->reset('reset');
 $this->filter->build();
-
-// Grid Columns
+``` 
+- Grid View
+```php
 $this->grid = \DataGrid::source($this->filter);
 $this->grid->add('name', 'Name');
 $this->grid->add('description', 'Description');
@@ -32,14 +32,12 @@ $this->grid->paginate(10);
 $this->grid->add('name', 'Name', true); // allow ordering by this column
 $this->grid->orderBy('article_id','desc'); //default orderby
 ``` 
-
-
-### Edit View
 - Allow Sorting on column
 ```php
 $this->grid->add('name', 'Name', true);
 ``` 
 
+### Edit View
 
 - text (input field) 
 ```php
