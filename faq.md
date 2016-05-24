@@ -64,13 +64,33 @@ A: You should use model events, for example for storing secure password values y
 
 Q: How can I add a blank option in select box field in CRUD ? 
 
-A: The options function gets an array so you can just add an index to the array before passing it, for example :
+A: The options function gets an array so you can just add an index to the array before passing it.
+
+To add a blank option to the Edit view:
 
 	$options = Department::lists("name", "id")->all();
 	array_unshift($options, '');
 
 	$this->edit = \DataEdit::source(new Category());
 	$this->edit->add('parent_id', 'Department', 'select')->options($options);
+
+To add a blank option on the Search View:
+
+	$options = Department::lists("name", "id")->all();
+	$blank_option = array(""=>"Please select a department");
+	$department_options = $blank_option + $options;
+	
+	$this->filter->add('parent_id', 'Department', 'select')->options($department_options);
+
+This will code will produce a dropdown box that looks like this:
+
+	<select>
+		<option selected> Please select a deparment </option>
+		<option value="1"> Accounting Department </option>
+		<option value="2"> Finance Department </option>
+		<option value="3"> Engineering Department </option>
+		...
+	</select>
 	
 Q: How can I remove item from admin menu? 
 
