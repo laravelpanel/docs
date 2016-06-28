@@ -29,7 +29,6 @@ $this->grid->paginate(10);
 ``` 
 - Ordering
 ```php
-$this->grid->add('name', 'Name', true); // allow ordering by this column
 $this->grid->orderBy('article_id','desc'); //default orderby
 ``` 
 - Allow Sorting on column
