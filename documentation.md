@@ -24,3 +24,5 @@
     - [Customize the Admin Template](/docs/master/customize-admin-template)
     - [Customize Controller and View](/docs/master/customized-controller-view)
     - [Overriding the Language Files](/docs/master/override-lang-files)
+
+- 
