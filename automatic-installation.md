@@ -26,6 +26,7 @@ Note: if you face any problem in any of the steps you should report it at [githu
     'providers' => array(
         Serverfireteam\Panel\PanelServiceProvider::class
     )
+    ```
 
 4. Run the following command in order to publish configs, views and assets.
 
