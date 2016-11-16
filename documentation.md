@@ -18,6 +18,7 @@
     - [CRUD Fields](/docs/master/crud-fields)
     - [CRUD Custom Fields](/docs/master/crud-custom-fields)
     - [CRUD Field Validation](/docs/master/crud-field-validation)
+    - [CRUD Events](/docs/master/crud-events)
 
 - Development
     - [Add Module to Panel](/docs/master/create-package)
