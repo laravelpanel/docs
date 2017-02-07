@@ -2,7 +2,7 @@
 
 Note: if you face any problem in any of the steps you should report it at [github](https://github.com/serverfireteam/panel/issues/new)
 
-1. First you need to create a laravel 5.3  project.
+1. First you need to create a laravel 5.4  project.
 
 2. Add LaravelPanel with runing this code in CMD 
     ```
@@ -13,7 +13,7 @@ Note: if you face any problem in any of the steps you should report it at [githu
     ```json
     {
         "require": {
-            "serverfireteam/panel": "1.5.*"
+            "serverfireteam/panel": "1.6.*"
         },
     }
     ```    
