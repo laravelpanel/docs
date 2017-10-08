@@ -1,17 +1,23 @@
 ## Manual Installation
 
-1. First you need a laravel 5.4 project ready to use.
+1. First you need a laravel 5.5 project ready to use.
 
 2. Add the package to require section of composer :
 
     ```json
     {
         "require": {
-            "serverfireteam/panel": "1.6.*"
+            "serverfireteam/panel": "1.7.*"
         },
     }
     ```
 
+Note :
+
+For Laravel 5.4 use 1.6.*
+For laravel 5.3 use 1.5.*
+For laravel 5.2 use 1.4.*
+For laravel 5.1 use 1.3.*
 
 And run the composer update command, the package and its dependencies will be installed.
 
